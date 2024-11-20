@@ -32,6 +32,14 @@ public class  MainTest {
     }
 
     @Test
+    void test2_toUppercase2() {
+
+        String actual = Main.toUppercase("guten tag, herr alak");
+        String expeacted = "GUTEN TAG, HERR ALAK";
+        Assertions.assertEquals(expeacted, actual);
+    }
+
+        @Test
     public void testIsPositive() {
         Assertions.assertTrue(Main.isPositive(5), "5 should be positive");
         Assertions.assertFalse(Main.isPositive(-3), "-3 should not be positive");
