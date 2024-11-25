@@ -1,6 +1,5 @@
 package example;
 
-import example.example.Main;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
@@ -27,16 +26,16 @@ public class  MainTest {
     void test_toUppercase(){
 
         String actual = Main.toUppercase("hello world");
-        String expeacted = "HELLO WORLD";
-        Assertions.assertEquals(expeacted, actual);
+        String expected = "HELLO WORLD";
+        Assertions.assertEquals(expected, actual);
     }
 
     @Test
     void test2_toUppercase2() {
 
         String actual = Main.toUppercase("guten tag, herr alak");
-        String expeacted = "GUTEN TAG, HERR ALAK";
-        Assertions.assertEquals(expeacted, actual);
+        String expected = "GUTEN TAG, HERR ALAK";
+        Assertions.assertEquals(expected, actual);
     }
 
         @Test
